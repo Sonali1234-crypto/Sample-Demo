@@ -1,11 +1,15 @@
 package POM_Model;
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Utility extends TestBase {
 	
@@ -57,11 +61,43 @@ public class Utility extends TestBase {
 		}
 		Flights.closeButton.click();
 		searchFormCity("Goa, India");
-		
-		
-		
-		
-		
 	}
+	
+	public void select_date() {
+		
+		dataSelect("May 2022","29");
+		Flights.clickSearch.click();
+		//Flights.close.click();
+	}
+	
+	public void bookNow() {
+		Flights.ViewPrices.click();
+		Flights.bookNow.click();
+		windowHandle();
+		String Actualtext=explicitwait(Flights.bookingcomplete);
+		if(Actualtext.contains("Complete your booking")) {
+			
+			Assert.assertEquals(Actualtext, "Complete your booking");
+		}else {
+			
+			Assert.fail("there is no window opened to book the ticket");
+		}
+	}
+	
+	public void continueFor() {
+		
+		
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",Flights.continueButton);
+		if(Flights.continueButton.isDisplayed()) {
+			Assert.assertTrue(true);
+			System.out.println("enter mobile Number");
+			Flights.mobileNo.sendKeys("8105326640");
+			Flights.Email.sendKeys("sonalisargam114@gmail.com");
+//			((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",Flights.continueButton);
+//			Flights.continueButton.click();
+		}
+	}
+	
+	
 
 }

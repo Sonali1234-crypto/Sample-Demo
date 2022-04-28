@@ -15,5 +15,21 @@ public class TestExecution extends Utility {
 		
 		SearchFromTo_to();
 	}
+	
+	@Test(priority=2)
+	public void verify_date() {
+		
+		select_date();
+	}
+	@Test(priority=3)
+	public void verify_book() {
+		
+		bookNow();
+	}
+	@Test(priority=4)
+	public void verify_continue() {
+		
+      continueFor();
+	}
 
 }

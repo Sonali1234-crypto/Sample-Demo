@@ -32,4 +32,38 @@ public class Flights {
 	@FindBy(xpath="//*[@class='langCardClose']")
 	public static WebElement closeButton;
 	
+	@FindBy(xpath="//*[@class='DayPicker-NavButton DayPicker-NavButton--next']")
+	public static WebElement nextMonth;
+	
+	@FindBy(xpath="(//*[@class='DayPicker-Month']/child::div/child::div)[1]")
+	public static WebElement month;
+	
+	@FindBy(xpath="//*[text()='Search']")
+	public static WebElement clickSearch;
+	
+    @FindBy(xpath="//*[@class='bgProperties icon20 overlayCrossIcon']")
+	public static WebElement close;
+    
+    @FindBy(xpath="(//*[text()='View Prices'])[1]")
+    public static WebElement ViewPrices;
+    
+    @FindBy(xpath="(//*[text()='Book Now'])[1]")
+    public static WebElement bookNow;
+    
+    @FindBy(xpath="//*[text()='Complete your booking']")
+    public static WebElement bookingcomplete;
+    
+    @FindBy(xpath="//*[text()='Continue']")
+    public static WebElement continueButton;
+    
+    @FindBy(xpath="//*[text()='Mobile No']/following::input[1]")
+    public static WebElement mobileNo;
+    
+    @FindBy(xpath="//*[text()='Email']/following::input[1]")
+    public static WebElement Email;
+	
+	
+	
+	
+	
 }

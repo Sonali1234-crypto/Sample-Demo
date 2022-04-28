@@ -5,7 +5,7 @@
     <classes>
       <class name="POM_Model.TestExecution">
         <methods>
-          <include name="verify_Search"/>
+          <include name="verify_continue"/>
         </methods>
       </class> <!-- POM_Model.TestExecution -->
     </classes>

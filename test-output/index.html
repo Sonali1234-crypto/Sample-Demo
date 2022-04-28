@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shivanand\AppData\Local\Temp\testng-eclipse--1150592590\testng-customsuite.xml</span>
+                    <span>C:\Users\shivanand\AppData\Local\Temp\testng-eclipse--936023505\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +106,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="POM_Model.TestExecution" class="method navigator-link" hash-for-method="verify_book">verify_book</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="POM_Model.TestExecution" class="method navigator-link" hash-for-method="verify_browser">verify_browser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="POM_Model.TestExecution" class="method navigator-link" hash-for-method="verify_continue">verify_continue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="POM_Model.TestExecution" class="method navigator-link" hash-for-method="verify_date">verify_date</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -136,9 +151,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verify_book">
+                  </a> <!-- verify_book -->
+                  <span class="method-name">verify_book</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verify_browser">
                   </a> <!-- verify_browser -->
                   <span class="method-name">verify_browser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_continue">
+                  </a> <!-- verify_continue -->
+                  <span class="method-name">verify_continue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_date">
+                  </a> <!-- verify_date -->
+                  <span class="method-name">verify_date</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +182,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shivanand\AppData\Local\Temp\testng-eclipse--1150592590\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shivanand\AppData\Local\Temp\testng-eclipse--936023505\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,20 +231,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_Search')
 data.setCell(0, 2, 'POM_Model.TestExecution')
-data.setCell(0, 3, 13966);
+data.setCell(0, 3, 13985);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verify_browser')
 data.setCell(1, 2, 'POM_Model.TestExecution')
-data.setCell(1, 3, 4639);
+data.setCell(1, 3, 4310);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_date')
+data.setCell(2, 2, 'POM_Model.TestExecution')
+data.setCell(2, 3, 3939);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_book')
+data.setCell(3, 2, 'POM_Model.TestExecution')
+data.setCell(3, 3, 3299);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_continue')
+data.setCell(4, 2, 'POM_Model.TestExecution')
+data.setCell(4, 3, 1104);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,7 +289,19 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_Search</span>
-                <span class="method-start">4642 ms</span>
+                <span class="method-start">4312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_date</span>
+                <span class="method-start">18300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_book</span>
+                <span class="method-start">22241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_continue</span>
+                <span class="method-start">25542 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
